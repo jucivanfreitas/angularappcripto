@@ -20,3 +20,12 @@ bash : gsutil -m rsync -R dist/ gs://angularappcripto
 Somente os usuários com permissão podem acessar o objeto com este link:
 
 https://storage.cloud.google.com/angularappcripto/angularappcripto/browser/index.html?authuser=1
+
+versionamentos
+
+git status
+git add .
+git commit -m "Salvar alterações antes de modificar o componente de usuário"
+
+
+git checkout hash-do-commit-anterior
