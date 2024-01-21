@@ -1,0 +1,22 @@
+em:
+
+rodar localmente:
+
+bash : ng serve
+
+Preparar para produção
+Antes de fazer o deploy, otimize seu aplicativo para produção:
+
+em : C:\Users\juciv\OneDrive\Devdatavisio\projetos\angularappcripto>
+
+bash: ng build --configuration=production
+
+Fazer o upload dos arquivos
+Use o comando gsutil para fazer o upload dos arquivos da pasta dist/ para o seu bucket no Cloud Storage:
+
+bash : gsutil -m rsync -R dist/ gs://angularappcripto
+
+
+Somente os usuários com permissão podem acessar o objeto com este link:
+
+https://storage.cloud.google.com/angularappcripto/angularappcripto/browser/index.html?authuser=1
